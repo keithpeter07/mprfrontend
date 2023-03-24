@@ -1,0 +1,525 @@
+:root{
+  --main-background: white;
+  --light-grey: #bbbbbb;
+  --grey-grey: #999999;
+  --my-blue: #003EDE;
+  --darker-blue: #001854;
+  --my-grey: #f7f7f7;
+  --my-darker-grey: #e7e7e7;
+  --button-grey:#D9D9D9;
+  --my-orange: #be4f00;
+  --my-green: #1E9400;
+}
+
+.main_page{
+  margin: auto;
+  min-height: 100vh;
+  height: 100%;
+  width: 100% !important;
+  padding-bottom: 2rem;
+  position: relative;
+  padding-top: 7rem;
+}
+
+button{
+  cursor: pointer !important;
+}
+
+
+.btnbtn{
+  border-radius: .5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+}
+
+.btnbtn:hover{
+  transform: scale(101%) !important;
+}
+.btnbtn:focus{
+  transform: scale(101%) !important;
+}
+.btnbtn:active{
+  transform: scale(99%) !important;
+}
+
+
+
+
+
+//-----------------------------------------------REGISTER-------------------------------------------//
+
+.form_cont{
+  width: 35%;
+  border: none;
+  border-radius: 2rem;
+  padding: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -75%);
+  background-color: var(--my-grey);
+  box-shadow: 0 2px 3px  #000000;
+}
+
+.form_label_cont {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-120%);
+  padding: 0px;
+}
+
+.form_label {
+  width: fit-content;
+  background-color: var(--main-background);
+}
+
+@media only screen and (max-width: 768px) {
+  .form_cont{
+    width: 99%;
+  }
+}
+
+
+.auth_page_btn {
+  width: 100%;
+  border: none;
+  border-radius: .2rem;
+}
+
+.show_pass_toggle {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none !important;
+}
+.show_pass_toggle:hover{
+  transform: scale(102%);
+}
+.show_pass_toggle:focus{
+  transform: scale(97%);
+}
+.show_pass_toggle:active{
+  transform: scale(97%);
+}
+
+
+.register_btn{
+  background-image: linear-gradient(var(--my-blue), var(--darker-blue));
+  background-image: -moz-linear-gradient(var(--my-blue), var(--darker-blue));
+  background-image: -o-linear-gradient(var(--my-blue), var(--darker-blue));
+  background-image: -webkit-linear-gradient(var(--my-blue), var(--darker-blue));
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+}
+.register_btn:hover{
+  transform: scale(101%);
+}
+.register_btn:focus{
+  transform: scale(101%);
+}
+.register_btn:active{
+  transform: scale(99%);
+}
+
+.auth_page_nav{
+  position: absolute;
+  transform: translateY(-300%);
+}
+
+
+//---Checkbox-----//
+
+.checkbox_cont{
+  position: relative;
+  padding: 0;
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.checkbox_cont > input{
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox_cont:hover > span {
+  transform: scale(102%);
+}
+.checkbox_cont:focus > span {
+  transform: scale(102%);
+}
+.checkbox_cont > input:checked + span {
+  background-color: var(--my-blue);
+}
+.checkbox_cont > input:checked + span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 90%;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg) translateX(0%) translateY(-20%);
+}
+
+.checkbox_cont > span{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--my-blue);
+  border-radius: .2rem;
+  background: transparent;
+}
+
+
+
+
+//--------------------------------------Navbar----------------------------------------//
+
+.Navbar{
+  width: 100% !important;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+}
+
+.Logo{
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.nav_button{
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  height: 100%;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.nav_button:hover{
+  transform: scale(103%);
+  color: var(--my-blue);
+}
+.nav_button:focus{
+  transform: scale(103%);
+  color: var(--my-blue);
+}
+.nav_button:active{
+  transform: scale(98%)
+}
+
+
+.nav_btn_txt{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.nav_btn_highlight{
+  width: 100%;
+  height: .3rem !important;
+  border-radius: 1rem;
+  background-color: var(--my-blue);
+  animation: grow-in .3s ease-out 1 forwards;
+  margin-top: .7rem;
+  
+}
+
+@keyframes grow-in {
+  from{transform: scaleX(0%);}
+  to{transform: scaleX(100%);}
+}
+
+
+
+
+
+
+//-----------------------LANDING--------------------------//
+
+.center_cont{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  text-align: center;
+}
+
+.head_intro{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
+
+
+
+//---------------------------------HOME-------------------------//
+
+.phone_details_txt{
+  margin-top: 2.5rem;
+  background-color: var(--my-darker-grey);
+  border: none;
+  border-radius: .8rem;
+  height: 2.7rem;
+  width: 50%;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  outline: none !important;
+}
+
+.phone_details_form{
+  width: 60%
+}
+
+
+
+
+
+//------------------------FIND TECHNICIAN PAGE--------------------------//
+.technician_card{
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: .6rem;
+  overflow: hidden;
+  box-shadow: -6px 6px 10px var(--grey-grey);
+}
+
+.technician_card:hover{
+  transform: rotateY(7deg) rotateX(-4deg);
+  box-shadow: -10px 8px 10px var(--grey-grey);
+}
+
+.technician_card:focus{
+  transform: rotateY(6deg) rotateX(-10deg);
+  box-shadow: -10px 10px 10px var(--grey-grey);
+}
+
+.technician_card:active{
+  transform: scale(98%);
+  box-shadow: -5px 5px 10px var(--grey-grey);
+}
+
+
+.technician_prof_cont{
+  position: relative;
+  height: 6rem;
+  width: 7rem;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.technician_prof_cont img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: fill !important;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.bold_text{
+  font-weight: 500 !important;
+}
+
+.simple_btn{
+  border: none;
+  border-radius: .5rem;
+  outline: none !important;
+  cursor: pointer;
+  box-shadow: 0 2px 2px var(--grey-grey);
+  margin-left: .7rem;
+  margin-right: .7rem;
+  background-color: var(--button-grey);
+  color: var(--my-blue)
+}
+
+.simple_btn:hover{
+  transform: scale(102%);
+}
+.simple_btn:focus{
+  transform: scale(102%);
+}
+.simple_btn:active{
+  transform: scale(99%);
+}
+
+
+
+
+//----------------------------TECHNICIAN PROFILE PAGE------------------------------------//
+
+.technician_image_cont {
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.technician_image_cont img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: fill !important;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.technician_details_cont{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.reviews_cont{
+  margin-top: 7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media only screen and (max-width: 767px){
+  .reviews_cont{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.review_text_cont{
+  height: 20rem !important;
+  width: 100% !important;
+  box-shadow: 0 5px 15px var(--grey-grey);
+  padding: .5rem;
+  width: fit-content;
+}
+
+.review_technician_details{
+  display: flex;
+  flex-direction: row;
+}
+
+.review_text{
+  width: auto;
+  height: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+
+
+
+
+//----------------------------PAYMENT--------------------------------------//
+
+.green_text{
+  color: var(--my-green);
+}
+
+
+.inpage_nav_btn{
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  height: 100%;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.inpage_nav_btn:hover{
+  transform: scale(103%);
+}
+.inpage_nav_btn:focus{
+  transform: scale(103%);
+}
+.inpage_nav_btn:active{
+  transform: scale(98%)
+}
+
+.inpage_nav_btn_highlight{
+  width: 100%;
+  height: .2rem !important;
+  border-radius: 1rem;
+  background-color: black;
+  animation: grow-in .3s ease-out 1 forwards;
+  margin: auto;
+  width: 50%;
+  margin-top: .7rem;
+}
+
+.pay_method_cont{
+  position: absolute;
+  text-align: center;
+  min-height: 20rem;
+  width: 40%;
+  margin: auto;
+  padding-top: 1rem;
+  box-shadow: 0 0 10px var(--grey-grey); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  border-radius: .5rem;
+}
+
+.pay_method_btns{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+  text-align: center;
+}
+
+.mpesa_btn{
+  background-image: linear-gradient(#11DA00, #086700) !important;
+  background-image: -moz-linear-gradient(#11DA00, #086700) !important;
+  background-image: -o-linear-gradient(#11DA00, #086700) !important;
+  background-image: -webkit-linear-gradient(#11DA00, #086700) !important;
+}
+.cash_btn{
+  background-color: #898989;
+}
+
+
+
