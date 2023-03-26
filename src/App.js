@@ -17,6 +17,8 @@ import FindTechnicianPage from './technicians/find';
 import TechnicianPage from './technicians/technicianPage';
 import PaymentMethodPage from './payment/paymentMethod';
 
+import { ShowMap } from './map';
+
 
 
 
@@ -42,6 +44,7 @@ function App() {
           <Route path='/home/findTechnician' element={<FindTechnicianPage/>}/>
           <Route path='/home/technicianPage' element={<TechnicianPage/>}/>
           <Route path='/payment' element={<PaymentMethodPage/>}/>
+          <Route path='/map' element={<ShowMap/>}/>
           <Route path='*' element={<div>Page not found</div>}/>
         </Routes>
       </BrowserRouter>
