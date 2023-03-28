@@ -1,7 +1,6 @@
 import { useJsApiLoader, GoogleMap, Marker, MarkerF, InfoWindowF } from "@react-google-maps/api";
 import technician_man from './technician_man.png'
 import settings from './settings.json'
-import mapStyles from './mapStyles.json'
 import { useEffect, useState } from "react";
 
 
@@ -48,7 +47,9 @@ export const ShowMap = () => {
         }
       ]
 
-    
+    const tryme = () => {
+      console.log(navigator.geolocation.getCurrentPosition((l)=>console.log(l)))
+    }
 
 
     if(!isLoaded) {
@@ -57,8 +58,11 @@ export const ShowMap = () => {
 
 
     return(
+      <div>
         
                 <GoogleMap
+
+                onClick={(e) => console.log(e.latLng.toString())}
 
                 
                     id='475720a0b4ee3a1d'
@@ -70,6 +74,9 @@ export const ShowMap = () => {
                 >
                     {marker()}
                 </GoogleMap>
+
+                <button onClick={()=> tryme()}>TRY ME</button>
+      </div>
             
     )
     }
